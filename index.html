@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project2 Student Registration Form</title>
+    <title>Student Admissions Portal</title>
 </head>
 <body>
+    <h1>Student Admissions Portal</h1>
     <header>
         <nav>
             <ul>
@@ -19,8 +20,9 @@
     </header>
     <main>
         <section id="home">
-            <h1>Welcome to Project2 Student Registration Form</h1>
-            <p>Register for your courses easily and efficiently.</p>
+            <h2>Welcome to Our College</h2>
+            <p>Welcome to our Student Admissions Portal</p>
+            <p>Start your journey towards a successful future with us.</p>
             <a href="#admissions">Apply for Admissions</a>
         </section>
         <section id="about">
@@ -38,9 +40,7 @@
         </section>
         <section id="courses">
             <h2>Our Courses</h2>
-            <p>We offer a variety of technical and professional courses designed to develop students' knowledge, practical skills, and career opportunities. Our courses focus on quality education, hands-on learning, and preparing students for future challenges.</p>
-            <h3>Available Courses</h3>
-            <table> 
+            <table border="1"> 
                 <thead>
                     <tr>
                         <th>Course Name</th>
@@ -67,9 +67,62 @@
                 </tbody>
             </table>
         </section>
+        <section id="admissions">
+            <h2> Student Admission Form</h2>
+            <p>Learn about our admission process and requirements.</p>
+            <form>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="student-name">Student Name:</label>
+                <input type="text" id="student-name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required><br><br>     
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required><br><br>
+                <p>Gender:</p>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other" required>
+                <label for="other">Other</label>
+                <input type="radio" id="prefer_not_to_say" name="gender" value="prefer_not_to_say" required>
+                <label for="prefer_not_to_say">Prefer not to say</label> <br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Course Information</legend>
+                <label for="course">Course Selection:</label>
+                <select id="course" name="course" required>     
+                    <option value="">Select a course</option>
+                    <option value="computer_science">Computer Science</option>
+                    <option value="information_technology">Information Technology</option>
+                    <option value="software_engineering">Software Engineering</option>
+                </select><br>
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required><br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Account Information</legend>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+            </fieldset>
+            <input type="submit" value="Submit">
+        </form>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, please feel free to reach out to us.</p>
+            <p>Email: <a href="mailto:info@admissionsportal.edu">info@admissionsportal.edu</a></p>
+            <p>Phone: +1 (123) 456-7890</p>
+            <p>Address: 123 College Avenue, City, State, ZIP</p>
+        </section>
     </main>
     <footer>
-        copyright &copy; 2026 Project2 Student Registration Form. All rights reserved.
+        copyright &copy; 2026 Student Admissions Portal. All rights reserved.
     </footer>
 </body>
 </html>
